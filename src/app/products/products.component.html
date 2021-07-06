@@ -1,0 +1,64 @@
+<h1 align="center"> <b>Home Appliances</b></h1>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <table align="center">
+  <tr>
+    <td colspan="3" >
+        <input type="text" class="form-control" placeholder="Search" [(ngModel)]="filteredString"/>
+    </td>
+    <td colspan="2">
+        <select  class="form-control" [(ngModel)]='sortby'> 
+            <option [value]='1'>
+                A-Z
+            </option>
+            <option [value]='2'>
+                low-high
+            </option>
+            
+        </select>   
+    </td>
+</tr>
+</table>
+  <!-- <input type="text"  width="10px" class="form-control"  placeholder="Search" [(ngModel)]="filteredString" > -->
+
+<table border="2" align="center">
+    <tr>
+        <th>
+            &nbsp; Product Id &nbsp;
+        </th>
+        <th>
+            &nbsp; Product Name &nbsp;
+        </th>
+        <th>
+            &nbsp; Product Price &nbsp;
+        </th>
+        <th>
+            &nbsp; Product Dec &nbsp;
+        </th>
+        <th>
+            &nbsp; Product Img &nbsp;
+        </th>
+    </tr>
+    <tr *ngFor="let product of products | searchByName:filteredString | sort:sortby">
+
+        <td class="btn-success text-white" align="center">
+               {{product.productId}}
+        </td>
+        <td class="btn-primary text-white" align="center">
+            {{product.productName}}
+     </td>
+     <td class="btn-warning text-white" align="center">
+        {{product.productPrice}}
+ </td>
+ <td class="btn-danger" align="center">
+    {{product.productDesc}}
+</td>
+<td align="center">
+    <img [src]="product.productImg" height="100px" width="80px">
+</td>
+    </tr>
+</table>
+{{errMsg | json}}

@@ -1,0 +1,6 @@
+[
+    {"courseId":1005, "courseName":"HTML","coursePrice":5000,"courseDescrption":"25 days of training","courseImg":"assets/images/html.png"},
+    {"courseId":1006, "courseName":"CSS","coursePrice":6000,"courseDescrption":"15 days of training","courseImg":"assets/images/css.jpg"},
+    {"courseId":1007, "courseName":"Java Script","coursePrice":8000,"courseDescrption":"20 days of training","courseImg":"assets/images/js.png"},
+    {"courseId":1008, "courseName":"Angular","coursePrice":20000,"courseDescrption":"50 days of training","courseImg":"assets/images/angular.png"}
+]

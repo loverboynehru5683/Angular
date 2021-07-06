@@ -1,0 +1,57 @@
+<h1 align="center"><b>Web Courses</b></h1><hr>
+  <div>
+  <table align="center" border="2" style="width: 70%; height: 120%;">
+    <tr>
+        <td colspan="3">
+        <input type="text" class="form-control" placeholder="Search Course Name" [(ngModel)]="filteredString"/>
+        </td>
+        <td colspan="2">
+            <select  class="form-control" [(ngModel)]='sortby'> 
+                <option [value]='1'>
+                    Sort by Name
+                </option>
+                <option [value]='2'>
+                    Sort by Price
+                </option>
+                
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th class="btn-success text-white" align="center">
+            Course Id
+        </th>
+        <th class="btn-success text-white" align="center">
+            Course Name
+        </th>
+        <th class="btn-success text-white" align="center">
+            Course Price
+        </th>
+        <th class="btn-success text-white" align="center">
+            Course Descrption
+        </th>
+        <th class="btn-success text-white" align="center">
+            Course Img
+        </th>
+    </tr>
+    <tr appMycolor *ngFor="let Course of courses | coursesearch:filteredString | coursesort:sortby">
+
+        <td  class="bg-primary text-white" align="center">
+            {{Course.courseId}}
+     </td>
+     <td  class="bg-primary text-white" align="center">
+         {{Course.courseName | titlecase}}
+  </td>
+  <td  class="bg-primary text-white" align="center">
+     {{Course.coursePrice | currency:'USD'}}
+</td>
+<td   class="bg-primary text-white" align="center">
+ {{Course.courseDescrption | lowercase}}
+</td>
+<td  align="center">
+ <img [src]="Course.courseImg" height="70px" width="100px">
+</td>
+ </tr>
+</table>
+</div>
+{{errMsg | json}}

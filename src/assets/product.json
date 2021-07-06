@@ -1,0 +1,9 @@
+[
+    { "productId":101,"productName":"Washing Machine", "productPrice":24000, "productDesc":"Whirlpool",
+      "productImg":"assets/images/washing.jpg"},
+    { "productId":102,"productName":"Air Conditioner", "productPrice":35000, "productDesc":"Samsung AC",
+      "productImg":"assets/images/ac.jpg"},
+    { "productId":103,"productName":"Mixer Grinder", "productPrice":2000, "productDesc":"Usha Grinder",
+      "productImg":"assets/images/mixerGrinder.jpg"},
+    { "productId":104, "productName":"Refrigerator", "productPrice":40000, "productDesc":"LG Fridge",
+      "productImg":"assets/images/LGfridge.jpg"}]

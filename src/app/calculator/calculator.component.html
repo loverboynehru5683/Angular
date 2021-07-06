@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<h1 align="center"><b>Calculator </b></h1><hr>
+<pre align="center">
+    FirstNumber  : <input style="margin-left:5px" type='text' [(ngModel)]='number1'>
+    SecondNumber : <input style="margin-left:5px" type='text' [(ngModel)]='number2'>
+    Result       : <input style="margin-left:5px" type='text' [(ngModel)]='number3' disabled>
+</pre>
+<div align="center">
+    <input  type="button" value='add' id="button" (click)="getResult('+')" class="btn btn-success">
+    <input  type="button" value='sub' id="button" (click)="getResult('-')" class="btn btn-primary">
+    <input  type="button" value='mul' id="button" (click)="getResult('*')" class="btn btn-warning">
+    <input  type="button" value='div' id="button" (click)="getResult('/')" class="btn btn-danger">
+</div>

@@ -1,0 +1,5 @@
+tr:hover,th:hover
+{
+    background-color: red;
+    color: red;
+}

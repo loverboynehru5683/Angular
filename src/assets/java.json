@@ -1,0 +1,6 @@
+[
+    {"courseId":1001, "courseName":"Core Java","coursePrice":5000,"courseDescrption":"45 days of training","courseImg":"assets/images/corejava.png"},
+    {"courseId":1002, "courseName":"Spring Framework","coursePrice":2500,"courseDescrption":"30 days of training","courseImg":"assets/images/spring.jpg"},
+    {"courseId":1003, "courseName":"Spring Boot","coursePrice":6000,"courseDescrption":"40 days of training","courseImg":"assets/images/springboot.jpg"},
+    {"courseId":1004, "courseName":"Java Fundamentals","coursePrice":4000,"courseDescrption":"35 days of training","courseImg":"assets/images/jfundamentals.png"}
+]
